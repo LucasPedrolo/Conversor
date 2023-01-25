@@ -16,11 +16,11 @@ class ViewControllerKelvin: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-        var kelvin: Int?
-        var celsius: Int?
-        var fahrenheit: Int?
-        var errado: String?
-        
+    var kelvin: Int?
+    var celsius: Int?
+    var fahrenheit: Int?
+    var errado: String?
+    
     func calculoC(textFieldC: String){
         kelvin = Int(textFieldC ?? "");
         celsius = (kelvin! -  273);
@@ -52,7 +52,4 @@ class ViewControllerKelvin: UIViewController {
     @IBAction func buttonK(_ sender: Any) {
         setSwitch();
     }
-    
-    
-
 }

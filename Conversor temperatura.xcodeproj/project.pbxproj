@@ -9,27 +9,45 @@
 /* Begin PBXBuildFile section */
 		4D81825C293FB1A0004A2D04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D81825B293FB1A0004A2D04 /* AppDelegate.swift */; };
 		4D81825E293FB1A0004A2D04 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D81825D293FB1A0004A2D04 /* SceneDelegate.swift */; };
-		4D818260293FB1A0004A2D04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D81825F293FB1A0004A2D04 /* ViewController.swift */; };
-		4D818263293FB1A0004A2D04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D818261293FB1A0004A2D04 /* Main.storyboard */; };
 		4D818265293FB1A0004A2D04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D818264293FB1A0004A2D04 /* Assets.xcassets */; };
 		4D818268293FB1A0004A2D04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D818266293FB1A0004A2D04 /* LaunchScreen.storyboard */; };
-		4D818270293FB424004A2D04 /* ViewControllerCelsius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D81826F293FB424004A2D04 /* ViewControllerCelsius.swift */; };
 		4D8182722940B3A5004A2D04 /* ViewControllerKelvin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8182712940B3A5004A2D04 /* ViewControllerKelvin.swift */; };
-		4D8182742940BCED004A2D04 /* ViewControllerFahrenheit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8182732940BCED004A2D04 /* ViewControllerFahrenheit.swift */; };
+		4DB5F775297FF70600B5C7EF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB5F774297FF70600B5C7EF /* HomeViewController.swift */; };
+		4DB5F777297FF71200B5C7EF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB5F776297FF71200B5C7EF /* HomeView.swift */; };
+		4DB5F779297FF72B00B5C7EF /* CelsiusVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB5F778297FF72B00B5C7EF /* CelsiusVIewController.swift */; };
+		4DB5F77B297FF73F00B5C7EF /* FahrenheitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB5F77A297FF73F00B5C7EF /* FahrenheitViewController.swift */; };
+		4DB5F77D297FF75000B5C7EF /* KelvinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB5F77C297FF74F00B5C7EF /* KelvinViewController.swift */; };
+		4DB5F780297FF7CA00B5C7EF /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB5F77F297FF7CA00B5C7EF /* BaseView.swift */; };
+		4DB5F782297FF7F600B5C7EF /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB5F781297FF7F600B5C7EF /* UIView+Extension.swift */; };
+		4DB5F784297FFCEF00B5C7EF /* CelsiusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB5F783297FFCEF00B5C7EF /* CelsiusView.swift */; };
+		4DB5F786298000E000B5C7EF /* FahrenheitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB5F785298000E000B5C7EF /* FahrenheitView.swift */; };
+		4DB5F788298002E300B5C7EF /* KelvinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB5F787298002E300B5C7EF /* KelvinView.swift */; };
+		4DB5F78B2980079C00B5C7EF /* CelsiusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB5F78A2980079C00B5C7EF /* CelsiusViewModel.swift */; };
+		4DB5F790298040DC00B5C7EF /* FahrenheitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB5F78F298040DC00B5C7EF /* FahrenheitViewModel.swift */; };
+		4DB5F7952980489B00B5C7EF /* KelvinViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB5F7942980489B00B5C7EF /* KelvinViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4D818258293FB1A0004A2D04 /* Conversor temperatura.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Conversor temperatura.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D81825B293FB1A0004A2D04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D81825D293FB1A0004A2D04 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4D81825F293FB1A0004A2D04 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4D818262293FB1A0004A2D04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4D818264293FB1A0004A2D04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D818267293FB1A0004A2D04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D818269293FB1A0004A2D04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4D81826F293FB424004A2D04 /* ViewControllerCelsius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerCelsius.swift; sourceTree = "<group>"; };
 		4D8182712940B3A5004A2D04 /* ViewControllerKelvin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerKelvin.swift; sourceTree = "<group>"; };
-		4D8182732940BCED004A2D04 /* ViewControllerFahrenheit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFahrenheit.swift; sourceTree = "<group>"; };
+		4DB5F774297FF70600B5C7EF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4DB5F776297FF71200B5C7EF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		4DB5F778297FF72B00B5C7EF /* CelsiusVIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelsiusVIewController.swift; sourceTree = "<group>"; };
+		4DB5F77A297FF73F00B5C7EF /* FahrenheitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FahrenheitViewController.swift; sourceTree = "<group>"; };
+		4DB5F77C297FF74F00B5C7EF /* KelvinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KelvinViewController.swift; sourceTree = "<group>"; };
+		4DB5F77F297FF7CA00B5C7EF /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		4DB5F781297FF7F600B5C7EF /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		4DB5F783297FFCEF00B5C7EF /* CelsiusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelsiusView.swift; sourceTree = "<group>"; };
+		4DB5F785298000E000B5C7EF /* FahrenheitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FahrenheitView.swift; sourceTree = "<group>"; };
+		4DB5F787298002E300B5C7EF /* KelvinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KelvinView.swift; sourceTree = "<group>"; };
+		4DB5F78A2980079C00B5C7EF /* CelsiusViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelsiusViewModel.swift; sourceTree = "<group>"; };
+		4DB5F78F298040DC00B5C7EF /* FahrenheitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FahrenheitViewModel.swift; sourceTree = "<group>"; };
+		4DB5F7942980489B00B5C7EF /* KelvinViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KelvinViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,18 +80,83 @@
 		4D81825A293FB1A0004A2D04 /* Conversor temperatura */ = {
 			isa = PBXGroup;
 			children = (
-				4D81825B293FB1A0004A2D04 /* AppDelegate.swift */,
+				4DB5F77E297FF79A00B5C7EF /* Commons */,
+				4DB5F7912980476F00B5C7EF /* Delegates */,
+				4DB5F7922980478800B5C7EF /* Resources */,
+				4DB5F7932980479900B5C7EF /* Storyboard */,
+				4DB5F7892980078A00B5C7EF /* ViewModel */,
+				4DB5F773297FF66A00B5C7EF /* View */,
+				4DB5F772297FF65F00B5C7EF /* Controller */,
 				4D81825D293FB1A0004A2D04 /* SceneDelegate.swift */,
-				4D81825F293FB1A0004A2D04 /* ViewController.swift */,
-				4D81826F293FB424004A2D04 /* ViewControllerCelsius.swift */,
 				4D8182712940B3A5004A2D04 /* ViewControllerKelvin.swift */,
-				4D8182732940BCED004A2D04 /* ViewControllerFahrenheit.swift */,
-				4D818261293FB1A0004A2D04 /* Main.storyboard */,
-				4D818264293FB1A0004A2D04 /* Assets.xcassets */,
-				4D818266293FB1A0004A2D04 /* LaunchScreen.storyboard */,
 				4D818269293FB1A0004A2D04 /* Info.plist */,
 			);
 			path = "Conversor temperatura";
+			sourceTree = "<group>";
+		};
+		4DB5F772297FF65F00B5C7EF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4DB5F774297FF70600B5C7EF /* HomeViewController.swift */,
+				4DB5F778297FF72B00B5C7EF /* CelsiusVIewController.swift */,
+				4DB5F77A297FF73F00B5C7EF /* FahrenheitViewController.swift */,
+				4DB5F77C297FF74F00B5C7EF /* KelvinViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4DB5F773297FF66A00B5C7EF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4DB5F776297FF71200B5C7EF /* HomeView.swift */,
+				4DB5F783297FFCEF00B5C7EF /* CelsiusView.swift */,
+				4DB5F787298002E300B5C7EF /* KelvinView.swift */,
+				4DB5F785298000E000B5C7EF /* FahrenheitView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4DB5F77E297FF79A00B5C7EF /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				4DB5F781297FF7F600B5C7EF /* UIView+Extension.swift */,
+				4DB5F77F297FF7CA00B5C7EF /* BaseView.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		4DB5F7892980078A00B5C7EF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4DB5F78A2980079C00B5C7EF /* CelsiusViewModel.swift */,
+				4DB5F78F298040DC00B5C7EF /* FahrenheitViewModel.swift */,
+				4DB5F7942980489B00B5C7EF /* KelvinViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4DB5F7912980476F00B5C7EF /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				4D81825B293FB1A0004A2D04 /* AppDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		4DB5F7922980478800B5C7EF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4D818264293FB1A0004A2D04 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4DB5F7932980479900B5C7EF /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				4D818266293FB1A0004A2D04 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +219,6 @@
 			files = (
 				4D818268293FB1A0004A2D04 /* LaunchScreen.storyboard in Resources */,
 				4D818265293FB1A0004A2D04 /* Assets.xcassets in Resources */,
-				4D818263293FB1A0004A2D04 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,26 +229,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D818260293FB1A0004A2D04 /* ViewController.swift in Sources */,
-				4D818270293FB424004A2D04 /* ViewControllerCelsius.swift in Sources */,
+				4DB5F777297FF71200B5C7EF /* HomeView.swift in Sources */,
 				4D81825C293FB1A0004A2D04 /* AppDelegate.swift in Sources */,
+				4DB5F77D297FF75000B5C7EF /* KelvinViewController.swift in Sources */,
 				4D8182722940B3A5004A2D04 /* ViewControllerKelvin.swift in Sources */,
-				4D8182742940BCED004A2D04 /* ViewControllerFahrenheit.swift in Sources */,
+				4DB5F78B2980079C00B5C7EF /* CelsiusViewModel.swift in Sources */,
+				4DB5F7952980489B00B5C7EF /* KelvinViewModel.swift in Sources */,
+				4DB5F784297FFCEF00B5C7EF /* CelsiusView.swift in Sources */,
+				4DB5F790298040DC00B5C7EF /* FahrenheitViewModel.swift in Sources */,
+				4DB5F782297FF7F600B5C7EF /* UIView+Extension.swift in Sources */,
+				4DB5F779297FF72B00B5C7EF /* CelsiusVIewController.swift in Sources */,
 				4D81825E293FB1A0004A2D04 /* SceneDelegate.swift in Sources */,
+				4DB5F775297FF70600B5C7EF /* HomeViewController.swift in Sources */,
+				4DB5F788298002E300B5C7EF /* KelvinView.swift in Sources */,
+				4DB5F780297FF7CA00B5C7EF /* BaseView.swift in Sources */,
+				4DB5F786298000E000B5C7EF /* FahrenheitView.swift in Sources */,
+				4DB5F77B297FF73F00B5C7EF /* FahrenheitViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4D818261293FB1A0004A2D04 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4D818262293FB1A0004A2D04 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4D818266293FB1A0004A2D04 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -303,7 +387,6 @@
 				INFOPLIST_FILE = "Conversor temperatura/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -330,7 +413,6 @@
 				INFOPLIST_FILE = "Conversor temperatura/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
