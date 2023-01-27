@@ -8,10 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4D81825C293FB1A0004A2D04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D81825B293FB1A0004A2D04 /* AppDelegate.swift */; };
-		4D81825E293FB1A0004A2D04 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D81825D293FB1A0004A2D04 /* SceneDelegate.swift */; };
 		4D818265293FB1A0004A2D04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D818264293FB1A0004A2D04 /* Assets.xcassets */; };
 		4D818268293FB1A0004A2D04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D818266293FB1A0004A2D04 /* LaunchScreen.storyboard */; };
-		4D8182722940B3A5004A2D04 /* ViewControllerKelvin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8182712940B3A5004A2D04 /* ViewControllerKelvin.swift */; };
 		4DB5F775297FF70600B5C7EF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB5F774297FF70600B5C7EF /* HomeViewController.swift */; };
 		4DB5F777297FF71200B5C7EF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB5F776297FF71200B5C7EF /* HomeView.swift */; };
 		4DB5F779297FF72B00B5C7EF /* CelsiusVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB5F778297FF72B00B5C7EF /* CelsiusVIewController.swift */; };
@@ -30,11 +28,9 @@
 /* Begin PBXFileReference section */
 		4D818258293FB1A0004A2D04 /* Conversor temperatura.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Conversor temperatura.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D81825B293FB1A0004A2D04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4D81825D293FB1A0004A2D04 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4D818264293FB1A0004A2D04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D818267293FB1A0004A2D04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D818269293FB1A0004A2D04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4D8182712940B3A5004A2D04 /* ViewControllerKelvin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerKelvin.swift; sourceTree = "<group>"; };
 		4DB5F774297FF70600B5C7EF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4DB5F776297FF71200B5C7EF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		4DB5F778297FF72B00B5C7EF /* CelsiusVIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelsiusVIewController.swift; sourceTree = "<group>"; };
@@ -87,8 +83,6 @@
 				4DB5F7892980078A00B5C7EF /* ViewModel */,
 				4DB5F773297FF66A00B5C7EF /* View */,
 				4DB5F772297FF65F00B5C7EF /* Controller */,
-				4D81825D293FB1A0004A2D04 /* SceneDelegate.swift */,
-				4D8182712940B3A5004A2D04 /* ViewControllerKelvin.swift */,
 				4D818269293FB1A0004A2D04 /* Info.plist */,
 			);
 			path = "Conversor temperatura";
@@ -232,14 +226,12 @@
 				4DB5F777297FF71200B5C7EF /* HomeView.swift in Sources */,
 				4D81825C293FB1A0004A2D04 /* AppDelegate.swift in Sources */,
 				4DB5F77D297FF75000B5C7EF /* KelvinViewController.swift in Sources */,
-				4D8182722940B3A5004A2D04 /* ViewControllerKelvin.swift in Sources */,
 				4DB5F78B2980079C00B5C7EF /* CelsiusViewModel.swift in Sources */,
 				4DB5F7952980489B00B5C7EF /* KelvinViewModel.swift in Sources */,
 				4DB5F784297FFCEF00B5C7EF /* CelsiusView.swift in Sources */,
 				4DB5F790298040DC00B5C7EF /* FahrenheitViewModel.swift in Sources */,
 				4DB5F782297FF7F600B5C7EF /* UIView+Extension.swift in Sources */,
 				4DB5F779297FF72B00B5C7EF /* CelsiusVIewController.swift in Sources */,
-				4D81825E293FB1A0004A2D04 /* SceneDelegate.swift in Sources */,
 				4DB5F775297FF70600B5C7EF /* HomeViewController.swift in Sources */,
 				4DB5F788298002E300B5C7EF /* KelvinView.swift in Sources */,
 				4DB5F780297FF7CA00B5C7EF /* BaseView.swift in Sources */,

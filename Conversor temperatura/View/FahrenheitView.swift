@@ -12,9 +12,12 @@ class FahrenheitView: BaseView {
     lazy var inputTxtField: UITextField = {
         let input = UITextField()
         input.text = ""
+        input.placeholder = "Inform your tempeature (F)"
+        input.textAlignment = .center
         input.textColor = .black
-        input.font = UIFont.systemFont(ofSize: 20)
-        input.layer.borderWidth = 2
+        input.font = UIFont.systemFont(ofSize: 15)
+        input.layer.borderWidth = 1
+        input.layer.cornerRadius = 5
         
         return input
     }()
@@ -84,9 +87,9 @@ class FahrenheitView: BaseView {
     }
     
     override func setConstraints() {
-        inputTxtField.anchor(top: safeAreaLayoutGuide.topAnchor, leading: safeAreaLayoutGuide.leadingAnchor, bottom: nil, trailing: nil, padding: .init(top: 170, left: 100, bottom: 0, right: 0), size: .init(width: 200, height: 30))
+        inputTxtField.anchor(top: safeAreaLayoutGuide.topAnchor, leading: safeAreaLayoutGuide.leadingAnchor, bottom: nil, trailing: nil, padding: .init(top: 170, left: 75, bottom: 0, right: 0), size: .init(width: 250, height: 40))
         
-        kelvinSwitch.anchor(top: inputTxtField.bottomAnchor, leading: inputTxtField.leadingAnchor, bottom: nil, trailing: nil, padding: .init(top: 30, left: 125, bottom: 0, right: 0), size: .init(width: 50, height: 50))
+        kelvinSwitch.anchor(top: inputTxtField.bottomAnchor, leading: inputTxtField.leadingAnchor, bottom: nil, trailing: nil, padding: .init(top: 30, left: 150, bottom: 0, right: 0), size: .init(width: 50, height: 50))
         
         celsiusSwitch.anchor(top: kelvinSwitch.bottomAnchor, leading: kelvinSwitch.leadingAnchor, bottom: nil, trailing: nil, padding: .init(top: 10, left: 0, bottom: 0, right: 0), size: .init(width: 50, height: 50))
         

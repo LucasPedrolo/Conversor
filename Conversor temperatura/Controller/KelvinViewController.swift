@@ -21,34 +21,9 @@ class KelvinViewController: UIViewController {
         viewKelvin.tempButton.addTarget(self, action: #selector(setSwitch), for: .touchUpInside)
     }
     
-    func calculoF(){
-        viewKelvin.resultLabel.text = "\(viewModel.calculoF(kelvin: Int(viewKelvin.inputTxtField.text ?? "") ?? 404))F"
-    }
-    
-    func calculoC() {
-        viewKelvin.resultLabel.text = "\(viewModel.calculoC(kelvin: Int(viewKelvin.inputTxtField.text ?? "") ?? 404))F"
-    }
-    
     @objc func setSwitch(){
-        while viewKelvin.celsiusSwitch.isOn, viewKelvin.fahrenheitSwitch.isOn == false {
-            calculoC()
-                break
-            }
-            while viewKelvin.fahrenheitSwitch.isOn, viewKelvin.celsiusSwitch.isOn == false {
-                calculoF()
-                break
-            }
-        while (viewKelvin.celsiusSwitch.isOn && viewKelvin.celsiusSwitch.isOn) || (viewKelvin.fahrenheitSwitch.isOn == false && viewKelvin.celsiusSwitch.isOn == false) {
-            if viewKelvin.celsiusSwitch.isOn == false {
-                    viewKelvin.resultLabel.text = "Erro o Fahreinheit não funciona"
-                } else {
-                    viewKelvin.resultLabel.text = "Erro outra coisa não funciona"
-                }
-                break
-            }
+        viewModel.validateSwitch(field: viewKelvin.inputTxtField.text ?? defString, switchC: viewKelvin.celsiusSwitch, switchF: viewKelvin.fahrenheitSwitch) { result in
+            self.viewKelvin.resultLabel.text = result
         }
-    
-    func calculoKF(mensagemErro: String){
-        viewKelvin.resultLabel.text = mensagemErro
-        }
+    }
 }

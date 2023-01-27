@@ -22,43 +22,9 @@ class CelsiusViewController: UIViewController {
         viewCelsius.tempButton.addTarget(self, action: #selector(setSwitch), for: .touchUpInside)
     }
     
-    
-    func calculoK(){
-        viewCelsius.resultLabel.text = "\(viewModel.calculoK(celsius: Int(viewCelsius.inputTxtField.text ?? "") ?? 404))K"
-    }
-    
-    func calculoF() {
-        viewCelsius.resultLabel.text = "\(viewModel.calculoF(celsius: Int(viewCelsius.inputTxtField.text ?? "") ?? 404))F"
-    }
-    
     @objc func setSwitch(){
-        
-        
-        viewModel.validateSwitch(switchF: viewCelsius.fahrenheitSwitch, switchK: viewCelsius.kelvinSwitch, kOn: 0, fOn: 1, fkOn: 2, fkOff: 3) { result in
-            swi
+        viewModel.validateSwitch(field: viewCelsius.inputTxtField.text ?? defString, switchF: viewCelsius.fahrenheitSwitch, switchK: viewCelsius.kelvinSwitch) { result in
+            self.viewCelsius.resultLabel.text = result
         }
-        
-        
-        
-        while viewCelsius.fahrenheitSwitch.isOn, viewCelsius.kelvinSwitch.isOn == false {
-            calculoF()
-                break
-            }
-            while viewCelsius.kelvinSwitch.isOn, viewCelsius.fahrenheitSwitch.isOn == false {
-                calculoK()
-                break
-            }
-        while (viewCelsius.kelvinSwitch.isOn && viewCelsius.fahrenheitSwitch.isOn) || (viewCelsius.kelvinSwitch.isOn == false && viewCelsius.fahrenheitSwitch.isOn == false) {
-            if viewCelsius.fahrenheitSwitch.isOn == false {
-                    viewCelsius.resultLabel.text = "Erro o Fahreinheit não funciona"
-                } else {
-                    viewCelsius.resultLabel.text = "Erro outra coisa não funciona"
-                }
-                break
-            }
-        }
-    
-    func calculoKF(mensagemErro: String){
-        viewCelsius.resultLabel.text = mensagemErro
-        }
+    }
 }

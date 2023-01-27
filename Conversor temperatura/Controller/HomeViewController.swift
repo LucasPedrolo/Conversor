@@ -25,20 +25,16 @@ class HomeViewController: UIViewController {
     
     @objc func goCelsius() {
         let goCelsius = CelsiusViewController()
-        
         navigationController?.pushViewController(goCelsius, animated: true)
     }
     
     @objc func goKelvin() {
         let goKelvin = KelvinViewController()
-        
         navigationController?.pushViewController(goKelvin, animated: true)
     }
     
     @objc func goFahrenheit() {
         let goFahrenheit = FahrenheitViewController()
-        
         navigationController?.pushViewController(goFahrenheit, animated: true)
-
     }
 }

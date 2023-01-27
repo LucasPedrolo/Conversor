@@ -21,7 +21,7 @@ class CelsiusViewModel {
         if let kelvin = convertedKelvin {
             return kelvin
         }
-        return 404
+        return 0
     }
     
     func calculoF(celsius: Int) -> Int {
@@ -31,27 +31,25 @@ class CelsiusViewModel {
         if let fahrenheit = convertedFahrenheit {
             return fahrenheit
         }
-        return 404
+        return 0
     }
     
-    //usar inout e completion()
-    
-    func validateSwitch(switchF: UISwitch, switchK: UISwitch, kOn: inout Int, fOn: Int, fkOn: Int, fkOff: Int, completion: @escaping (Int) -> ()) {
-        while switchF.isOn, switchK.isOn == false {
-            kOn = 2
-            break
-        }
-        while switchK.isOn, switchF.isOn == false {
-            kOn
-            break
-        }
-        while (switchK.isOn == false && switchF.isOn == false) {
-            fkOff
-            break
-        }
-        while switchK.isOn && switchF.isOn {
-            fkOn
-            break
+    func validateSwitch(field: String, switchF: UISwitch, switchK: UISwitch ,completion: @escaping (String) -> ()) {
+        
+        if switchF.isOn, switchK.isOn == false {
+            completion("\(calculoF(celsius: Int(field) ?? defInt))C")
+            
+        } else if switchK.isOn, switchF.isOn == false {
+            completion("\(calculoK(celsius: Int(field) ?? defInt))F")
+            
+        } else if (switchK.isOn == false && switchF.isOn == false) {
+            completion("Error none switch activated")
+            
+        } else if switchK.isOn && switchF.isOn {
+            completion("Error both switch activated")
+            
+        } else {
+            completion("Error")
         }
     }
 }

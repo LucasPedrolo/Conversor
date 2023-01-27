@@ -20,7 +20,7 @@ class FahrenheitViewModel {
         if let kelvin = convertedKelvin {
             return kelvin
         }
-        return 404
+        return 0
     }
     
     func calculoC(fahrenheit: Int) -> Int {
@@ -30,6 +30,25 @@ class FahrenheitViewModel {
         if let celsius = convertedCelsius {
             return celsius
         }
-        return 404
+        return 0
+    }
+    
+    func validateSwitch(field: String, switchC: UISwitch, switchK: UISwitch ,completion: @escaping (String) -> ()) {
+        
+        if switchC.isOn, switchK.isOn == false {
+            completion("\(calculoC(fahrenheit: Int(field) ?? defInt))F")
+            
+        } else if switchK.isOn, switchC.isOn == false {
+            completion("\(calculoK(fahrenheit: Int(field) ?? defInt))K")
+            
+        } else if (switchK.isOn == false && switchC.isOn == false) {
+            completion("Error none switch activated")
+            
+        } else if switchK.isOn && switchC.isOn {
+            completion("Error both switch activated")
+            
+        } else {
+            completion("Error")
+        }
     }
 }

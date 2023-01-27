@@ -7,6 +7,9 @@
 
 import UIKit
 
+let defString = String(stringLiteral: "")
+let defInt = Int(integerLiteral: 0)
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -23,4 +26,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 }
-
